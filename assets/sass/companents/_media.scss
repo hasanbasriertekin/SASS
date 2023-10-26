@@ -1,20 +1,32 @@
 @media (max-width:768px){
     .section-acardion{
-        margin-top: 10rem !important;
+        margin-top: 5rem !important;
     }
     .section-5{
         flex-direction: column-reverse;
     }
-    
+    .btn-2{
+        width: 310px;
+        height: 58px;
+    }
+    .btn-1-2{
+        display: block;
+        width: 310px !important;
+        height: 58px !important;
+        align-items: center;
+    }
+    .a-learn{
+       display: block;
+       font-size:x-large;
+       margin-top: 2rem;
+       text-align: center;
+    }
 }
 
 @media screen and (max-width:996px) {
     .dasthead{
         display: none;
     }
-    img.img-fluid{
-        display: none;
-       }
     .section-2{
         flex-direction: column-reverse;
     }
@@ -23,5 +35,11 @@
     }
     .lead{
         display: none;
+    }
+    img.img-fluid{
+        display: none;
+    }
+    .acardion-1{
+        margin-top: 2rem;
     }
 }
