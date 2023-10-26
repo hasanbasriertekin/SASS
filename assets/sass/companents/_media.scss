@@ -1,0 +1,27 @@
+@media (max-width:768px){
+    .section-acardion{
+        margin-top: 10rem !important;
+    }
+    .section-5{
+        flex-direction: column-reverse;
+    }
+    
+}
+
+@media screen and (max-width:996px) {
+    .dasthead{
+        display: none;
+    }
+    img.img-fluid{
+        display: none;
+       }
+    .section-2{
+        flex-direction: column-reverse;
+    }
+    header .col{
+        text-align: center;
+    }
+    .lead{
+        display: none;
+    }
+}

@@ -1,0 +1,20 @@
+
+header{
+    .btn-1{
+        border: 0;
+        border-radius: 1.5em;
+        width: 144px;
+        height: 37px;
+    }
+ 
+    h1{
+        font-size: 80px;
+    }
+    span{
+    background: var(--GRA-Blue2, linear-gradient(169deg, #3984F4 -6.01%, #0CD3FF 36.87%, #2F7CF0 78.04%, #0E65E8 103.77%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+   
+}
