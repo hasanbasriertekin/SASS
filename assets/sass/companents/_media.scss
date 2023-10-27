@@ -1,45 +1,74 @@
-@media (max-width:768px){
-    .section-acardion{
-        margin-top: 5rem !important;
-    }
-    .section-5{
-        flex-direction: column-reverse;
-    }
-    .btn-2{
-        width: 310px;
-        height: 58px;
-    }
-    .btn-1-2{
-        display: block;
-        width: 310px !important;
-        height: 58px !important;
-        align-items: center;
-    }
-    .a-learn{
-       display: block;
-       font-size:x-large;
-       margin-top: 2rem;
-       text-align: center;
-    }
-}
+/* @media (max-width: 768px) {
+  .section-acardion {
+    margin-top: 5rem !important;
+  }
 
-@media screen and (max-width:996px) {
-    .dasthead{
-        display: none;
-    }
-    .section-2{
-        flex-direction: column-reverse;
-    }
-    header .col{
-        text-align: center;
-    }
-    .lead{
-        display: none;
-    }
-    img.img-fluid{
-        display: none;
-    }
-    .acardion-1{
-        margin-top: 2rem;
-    }
+  .btn-1-2 {
+    display: block;
+    width: 310px !important;
+    height: 58px !important;
+    align-items: center;
+  }
+
+}  */
+
+@media screen and (max-width: 992px) {
+  .section-2 {
+    flex-direction: column-reverse;
+  }
+  .lead {
+    display: none;
+  }
+  .acardion-1 {
+    margin-top: 2rem;
+  }
+  .side-picture {
+    margin-left: 5rem;
+    margin-right: auto;
+  }
+  .header-btn {
+    width: 100%;
+    flex-direction: column;
+  }
+  .get-btn {
+    margin-top: 1.5rem;
+  }
+  .section-3-get{
+   flex-direction: column; 
+   justify-content: center;
+   gap: 0 !important;
+  }
+  .section-3-get button{
+    width: 100%;
+    padding: 1rem;
+  }
+  .a-learn {
+    display: block;
+    font-size: larger;
+    margin-top: 1rem;
+    text-align: center;
+    padding: 0;
+  }
+  .section-5 {
+    flex-direction: column-reverse;
+  }
+  .header-text{
+    text-align: center;
+  }
+  .charts-img{
+    display: none;
+  }
+  section.charts{
+    position: absolute !important;
+    top: 127% !important;
+    border: #fff !important;
+    border-radius: 2rem !important;
+  }
+  .section-input{
+    margin-top: 58rem !important;
+    
+  }
+  nav .btn-1{
+    width: 40% !important;
+  }
 }

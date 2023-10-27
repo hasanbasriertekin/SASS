@@ -1,45 +1,73 @@
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .section-acardion {
     margin-top: 5rem !important;
   }
-  .section-5 {
-    flex-direction: column-reverse;
-  }
-  .btn-2 {
-    width: 310px;
-    height: 58px;
-  }
+
   .btn-1-2 {
     display: block;
     width: 310px !important;
     height: 58px !important;
     align-items: center;
   }
-  .a-learn {
-    display: block;
-    font-size: x-large;
-    margin-top: 2rem;
-    text-align: center;
-  }
-}
-@media screen and (max-width: 996px) {
-  .dasthead {
-    display: none;
-  }
+
+}  */
+@media screen and (max-width: 992px) {
   .section-2 {
     flex-direction: column-reverse;
-  }
-  header .col {
-    text-align: center;
   }
   .lead {
     display: none;
   }
-  img.img-fluid {
-    display: none;
-  }
   .acardion-1 {
     margin-top: 2rem;
+  }
+  .side-picture {
+    margin-left: 5rem;
+    margin-right: auto;
+  }
+  .header-btn {
+    width: 100%;
+    flex-direction: column;
+  }
+  .get-btn {
+    margin-top: 1.5rem;
+  }
+  .section-3-get {
+    flex-direction: column;
+    justify-content: center;
+    gap: 0 !important;
+  }
+  .section-3-get button {
+    width: 100%;
+    padding: 1rem;
+  }
+  .a-learn {
+    display: block;
+    font-size: larger;
+    margin-top: 1rem;
+    text-align: center;
+    padding: 0;
+  }
+  .section-5 {
+    flex-direction: column-reverse;
+  }
+  .header-text {
+    text-align: center;
+  }
+  .charts-img {
+    display: none;
+  }
+  section.charts {
+    position: absolute !important;
+    top: 127% !important;
+    border: #fff !important;
+    border-radius: 2rem !important;
+  }
+  .section-input {
+    margin-top: 58rem !important;
+  }
+  nav .btn-1 {
+    width: 40% !important;
   }
 }
 footer ul li.ul-li {
@@ -64,23 +92,26 @@ footer .footer-1-2 {
   flex-basis: 250px;
 }
 
-header .btn-1 {
-  border: 0;
-  border-radius: 1.5em;
-  width: 144px;
-  height: 37px;
-}
 header h1 {
   font-size: 80px;
 }
 header span {
-  background: var(--GRA-Blue2, linear-gradient(169deg, #3984F4 -6.01%, #0CD3FF 36.87%, #2F7CF0 78.04%, #0E65E8 103.77%));
+  background: var(--GRA-Blue2, linear-gradient(169deg, #3984f4 -6.01%, #0cd3ff 36.87%, #2f7cf0 78.04%, #0e65e8 103.77%));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-header .mobil {
-  display: flex;
+
+.header-btn {
+  gap: 1rem;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+nav .btn-1 {
+  width: 62%;
 }
 
 .section-2 {
@@ -121,19 +152,44 @@ header .mobil {
 
 section.section-7 .dasthead-1 {
   position: absolute;
-  top: 337%;
-  bottom: 0;
-  left: 29%;
+  left: 57%;
+  top: 34%;
+  transform: translate(50%, 50%);
 }
 section.section-7 .dasthead-2 {
   position: absolute;
-  top: 337%;
-  bottom: 0;
   left: 58%;
+  top: 34%;
+  transform: translate(50%, 50%);
 }
 
 .section-input {
   padding-right: 3rem;
+  margin-top: 15rem;
+}
+
+.section-3-get {
+  gap: 2rem;
+}
+
+section.charts {
+  border: #fff;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 2rem;
+  top: 84%;
+  bottom: 0;
+  left: 15%;
+}
+
+span.pls {
+  color: green;
+  font-size: large;
+}
+
+span.pls-x {
+  color: red;
+  font-size: large;
 }
 
 .img-changes {
@@ -149,13 +205,12 @@ section.section-7 .dasthead-2 {
   height: 37px;
 }
 
-.btn-1 {
-  border: 0;
-  border-radius: 1.5em;
-  width: 144px;
-  height: 37px;
-}
-
+/* .btn-1{
+    border: 0;
+    border-radius: 1.5em;
+    width: 144px;
+    height: 37px;
+} */
 .my-gradiant {
   background-image: url(../assets/image/Hero-backraound.png);
 }
@@ -239,8 +294,8 @@ section.section-7 .dasthead-2 {
   transform: scale(0.9);
 }
 
-span {
-  background: var(--GRA-Blue2, linear-gradient(169deg, #3984F4 -6.01%, #0CD3FF 36.87%, #2F7CF0 78.04%, #0E65E8 103.77%));
+span.section-span-tools {
+  background: var(--GRA-Blue2, linear-gradient(169deg, #3984f4 -6.01%, #0cd3ff 36.87%, #2f7cf0 78.04%, #0e65e8 103.77%));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -251,7 +306,10 @@ span {
   margin-bottom: 2rem;
 }
 
-h3, p, ul, a {
+h3,
+p,
+ul,
+a {
   font-family: poppins;
 }
 

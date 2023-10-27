@@ -79,22 +79,24 @@
               </ul>
             </li>
           </ul>
-          <div class="column-gap">
+          <div class="d-flex gap-2">
             <button
               class="btn btn-3 btn-outline-primary rounded-5"
               type="submit"
             >
               Log In
             </button>
-            <button class="btn-1 bg-primary text-white">Sign In</button>
+            <button class="btn-1 btn rounded-5 bg-primary text-white">
+              Sign In
+            </button>
           </div>
         </div>
       </div>
     </nav>
-    <header class="px-5 my-gradiant">
+    <header class="px-5 py-5 my-gradiant">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col">
+          <div class="col header-text">
             <small class="text-primary text-center fw-bold"
               >SIGN UP TODAY</small
             >
@@ -107,11 +109,14 @@
               Buy and sell 200+ cryptocurrencies with 20+ flat currencies using
               bank transfers or your credit/debit card.
             </p>
-            <div class="mobil gap-4">
-              <button class="btn-1 btn-1-2 bg-primary text-white mt-4">
+            <div class="d-flex align-items-center header-btn">
+              <button
+                class="bg-primary text-white w-100 w-lg-50 rounded-5 border-0 py-3 get-btn"
+              >
                 Get Started
               </button>
-              <button class="btn btn-2 btn-outline-primary rounded-5 mt-4">
+
+              <button class="btn btn-outline-primary py-3 rounded-5 w-100">
                 <a
                   class="nav-link dropdown-toggle"
                   href="#"
@@ -123,7 +128,9 @@
                 </a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Another action</a>
+                  </li>
                   <li><hr class="dropdown-divider" /></li>
                   <li>
                     <a class="dropdown-item" href="#">Something else here</a>
@@ -133,233 +140,161 @@
             </div>
           </div>
           <div class="col">
-            <img class="img-fluid" src="./assets/image/Group 71.png" alt="" />
+            <img
+              class="img-fluid d-none d-lg-block"
+              src="./assets/image/Group 71.png"
+              alt=""
+            />
           </div>
         </div>
       </div>
     </header>
 
-    <!-- <section class="rectangle bg-light mx-auto py-5">
+    <section class="charts">
       <div class="container">
-        <div class="border-1">
-          <div class="row section-1">
-            <div class="border-hight section-1-2 col-4">
-              <div
-                class="d-flex mb-4 justify-content-between align-items-center"
-              >
-                <img class="px-3" src="assets/image/🔥 Trending.png" />
-                <a class="more" href="#!">More ></a>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="first-table-div">
+              <div class="title-text d-flex justify-content-between">
+                <span>🔥 Trending</span>
+                <a href="">More ></a>
               </div>
-
-              <div class="row container">
-                <div class="col-4">
-                  <div class="mb-3 text-muted">Name</div>
-                  <div>
-                    <img src="assets/image/btc.png" />
-                    &nbsp; Bitcoin
-                  </div>
-
-                  <div class="pt-3">
-                    <img src="assets/image/eth.png" />
-                    &nbsp; Etherum
-                  </div>
-                  <div class="pt-3">
-                    <img src="assets/image/solana.png" />
-                    &nbsp; Solana
-                  </div>
-                  <div class="pt-3">
-                    <img src="assets/image/dgc.png" />
-                    &nbsp; Dogecoin
-                  </div>
-                </div>
-
-                <div class="col-4">
-                  <div class="text-muted">Price</div>
-                  <div class="mt-3">
-                    <img src="assets/image/- $3,480.65.png" width="85" />
-                  </div>
-                  <div class="mt-3">
-                    <img src="assets/image/+ $150,20.png" width="70" />
-                  </div>
-                  <div class="mt-4">
-                    <img src="assets/image/- $3,480.65.png" width="85" />
-                  </div>
-                  <div class="mt-3">
-                    <img src="assets/image/+ $150,20.png" width="70" />
-                  </div>
-                </div>
-                <div class="col-4">
-                  <div class="text-muted">Chart</div>
-                  <div class="mt-2">
-                    <img
-                      src="assets/image/yukselis.png"
-                      alt="chart"
-                      width="90"
-                    />
-                  </div>
-                  <div class="mt-2">
-                    <img src="assets/image/azalma.png" width="90" />
-                  </div>
-                  <div class="mt-2">
-                    <img
-                      src="assets/image/yukselis.png"
-                      alt="chart"
-                      width="90"
-                    />
-                  </div>
-                  <div class="mt-2">
-                    <img src="assets/image/azalma.png" alt="chart" width="90" />
-                  </div>
-                </div>
-              </div>
+              <br />
+              <table class="table first-table" style="width: 100%">
+                <thead style="border-bottom: 1px solid white">
+                  <td>Name</td>
+                  <td>Price</td>
+                  <td class="d-none d-lg-block">Chart</td>
+                </thead>
+                <tr>
+                  <td><img src="/assets/image/btc-little.png" /> Bitcoin</td>
+                  <td><span class="pls">+</span> $43,180</td>
+                  <td>
+                    <img class="charts-img" src="assets/image/yukselis.png" />
+                  </td>
+                </tr>
+                <tr>
+                  <td><img src="./assets/image/ether.png" /> Etherium</td>
+                  <td><span class="pls-x">-</span> $3,480.12</td>
+                  <td>
+                    <img class="charts-img" src="assets/image/azalma.png" />
+                  </td>
+                </tr>
+                <tr>
+                  <td><img src="./assets/image/solana.png" /> Solana</td>
+                  <td><span class="pls">+</span> $150,20</td>
+                  <td>
+                    <img class="charts-img" src="./assets/image/yukselis.png" />
+                  </td>
+                </tr>
+                <tr style="border-bottom: 1px solid white">
+                  <td><img src="./assets/image/doge.png" /> Dogecoin</td>
+                  <td><span class="pls-x">-</span> $0,1572</td>
+                  <td>
+                    <img class="charts-img" src="./assets/image/azalma.png" />
+                  </td>
+                </tr>
+              </table>
             </div>
-            <div class="col-4 section-1-2 border-hight">
-              <div class="d-flex justify-content-between align-items-center">
-                <img src="assets/image/Frame 16.png" />
-                <a class="more" href="#!">More ></a>
+          </div>
+          <div class="col-lg-4">
+            <div class="first-table-div">
+              <div class="title-text d-flex justify-content-between">
+                <span>🚀 Top Gainers</span>
+                <a href="">More ></a>
               </div>
-
-              <div class="row container">
-                <div class="col-4">
-                  <div class="mb-3 text-muted">Name</div>
-                  <div>
-                    <img src="assets/image/btc.png" />
-                    &nbsp; Bitcoin
-                  </div>
-
-                  <div class="pt-3">
-                    <img src="assets/image/eth.png" />
-                    &nbsp; Etherum
-                  </div>
-                  <div class="pt-3">
-                    <img src="assets/image/solana.png" />
-                    &nbsp; Solana
-                  </div>
-
-                  <div class="pt-3">
-                    <img src="assets/image/dgc.png" />
-                    &nbsp; Dogecoin
-                  </div>
-                </div>
-                <div class="col-4">
-                  <div class="text-muted">Price</div>
-                  <div class="mt-3">
-                    <img src="assets/image/- $3,480.65.png" width="85" />
-                  </div>
-                  <div class="mt-3">
-                    <img src="assets/image/+ $150,20.png" width="70" />
-                  </div>
-                  <div class="mt-4">
-                    <img src="assets/image/- $3,480.65.png" width="85" />
-                  </div>
-                  <div class="mt-3">
-                    <img src="assets/image/+ $150,20.png" width="70" />
-                  </div>
-                </div>
-                <div class="col-4">
-                  <div class="text-muted">Chart</div>
-                  <div class="mt-2">
-                    <img src="assets/image/azalma.png" alt="chart" width="90" />
-                  </div>
-                  <div class="mt-2">
-                    <img
-                      src="assets/image/yukselis.png"
-                      alt="chart"
-                      width="90"
-                    />
-                  </div>
-                  <div class="mt-2">
-                    <img src="assets/image/azalma.png" alt="chart" width="90" />
-                  </div>
-                  <div class="mt-2">
-                    <img
-                      src="assets/image/yukselis.png"
-                      alt="chart"
-                      width="90"
-                    />
-                  </div>
-                </div>
-              </div>
+              <br />
+              <table class="table first-table" style="width: 100%">
+                <thead style="border-bottom: 1px solid white">
+                  <td>Name</td>
+                  <td>Price</td>
+                  <td class="d-none d-lg-block">Chart</td>
+                </thead>
+                <tr>
+                  <td><img src="./assets/image/pappay.png" /> Pappay</td>
+                  <td><span class="pls">+</span> $0.374</td>
+                  <td>
+                    <img class="charts-img" src="./assets/image/yukselis.png" />
+                  </td>
+                </tr>
+                <tr>
+                  <td><img src="./assets/image/b-asia.png" /> Bitcoin Asia</td>
+                  <td><span class="pls-x">-</span> $0.029</td>
+                  <td>
+                    <img class="charts-img" src="./assets/image/azalma.png" />
+                  </td>
+                </tr>
+                <tr>
+                  <td><img src="./assets/image/moon.png" /> MoonRock</td>
+                  <td><span class="pls">+</span> $0.407</td>
+                  <td>
+                    <img class="charts-img" src="./assets/image/yukselis.png" />
+                  </td>
+                </tr>
+                <tr style="border-bottom: 1px solid white">
+                  <td><img src="./assets/image/ninja.png" /> NinjaFloki</td>
+                  <td><span class="pls-x">-</span> $0.013</td>
+                  <td>
+                    <img class="charts-img" src="./assets/image/azalma.png" />
+                  </td>
+                </tr>
+              </table>
             </div>
-            <div class="col-4 section-1-2">
-              <div
-                class="d-flex mb-4 justify-content-between align-items-center"
-              >
-                <img class="px-3" src="assets/image/💎 Recently Added.png" />
-                <a class="more" href="#!">More ></a>
+          </div>
+          <div class="col-lg-4" style="border: none">
+            <div class="first-table-div">
+              <div class="title-text d-flex justify-content-between">
+                <span>💎 Recently Added</span>
+                <a href="">More ></a>
               </div>
-
-              <div class="row container">
-                <div class="col-4">
-                  <div class="mb-3 text-muted">Name</div>
-                  <div>
-                    <img src="assets/image/btc.png" />
-                    &nbsp; Bitcoin
-                  </div>
-
-                  <div class="pt-3">
-                    <img src="assets/image/eth.png" />
-                    &nbsp; Etherum
-                  </div>
-                  <div class="pt-3">
-                    <img src="assets/image/solana.png" />
-                    &nbsp; Solana
-                  </div>
-
-                  <div class="pt-3">
-                    <img src="assets/image/dgc.png" />
-                    &nbsp; Dogecoin
-                  </div>
-                </div>
-                <div class="col-4">
-                  <div class="text-muted">Price</div>
-                  <div class="mt-3">
-                    <img src="assets/image/- $3,480.65.png" width="85" />
-                  </div>
-                  <div class="mt-3">
-                    <img src="assets/image/+ $150,20.png" width="70" />
-                  </div>
-                  <div class="mt-4">
-                    <img src="assets/image/- $3,480.65.png" width="85" />
-                  </div>
-                  <div class="mt-3">
-                    <img src="assets/image/+ $150,20.png" width="70" />
-                  </div>
-                </div>
-                <div class="col-4">
-                  <div class="text-muted">Chart</div>
-                  <div class="mt-2">
-                    <img src="assets/image/azalma.png" alt="chart" width="90" />
-                  </div>
-                  <div class="mt-2">
-                    <img
-                      src="assets/image/yukselis.png"
-                      alt="chart"
-                      width="90"
-                    />
-                  </div>
-                  <div class="mt-2">
-                    <img src="assets/image/azalma.png" alt="chart" width="90" />
-                  </div>
-                  <div class="mt-2">
-                    <img
-                      src="assets/image/yukselis.png"
-                      alt="chart"
-                      width="90"
-                    />
-                  </div>
-                </div>
-              </div>
+              <br />
+              <table class="table first-table" style="width: 100%">
+                <thead style="border-bottom: 1px solid white">
+                  <td>Name</td>
+                  <td>Price</td>
+                  <td class="d-none d-lg-block">Chart</td>
+                </thead>
+                <tr>
+                  <td><img src="./assets/image/meta.png" /> Metacraft</td>
+                  <td><span class="pls">+</span> $0.608</td>
+                  <td>
+                    <img class="charts-img" src="./assets/image/yukselis.png" />
+                  </td>
+                </tr>
+                <tr>
+                  <td><img src="./assets/image/frog.png" /> Frog</td>
+                  <td><span class="pls-x">-</span> $0.875</td>
+                  <td>
+                    <img class="charts-img" src="./assets/image/azalma.png" />
+                  </td>
+                </tr>
+                <tr>
+                  <td><img src="./assets/image/musk.png" /> Musk Doge</td>
+                  <td><span class="pls">+</span> $0.441</td>
+                  <td>
+                    <img class="charts-img" src="./assets/image/yukselis.png" />
+                  </td>
+                </tr>
+                <tr style="border-bottom: 1px solid white">
+                  <td><img src="./assets/image/share.png" /> 2SHARE</td>
+                  <td><span class="pls-x">-</span> $1,366</td>
+                  <td>
+                    <img class="charts-img" src="./assets/image/azalma.png" />
+                  </td>
+                </tr>
+              </table>
             </div>
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
 
     <section class="section-input mb-5">
       <div class="container">
-        <div class="row section-2 d-flex align-items-center justify-content-center">
-          <div class="col-lg-6  section-2-1">
+        <div
+          class="row section-2 d-flex align-items-center justify-content-center"
+        >
+          <div class="col-lg-6 section-2-1">
             <h3 class="fw-bold">
               Buy & trade on the original crypto exchange.
             </h3>
@@ -443,7 +378,7 @@
               </button>
             </div>
           </div>
-          <div class="col-lg-6 section-2-1 Group-35 ">
+          <div class="col-lg-6 section-2-1 Group-35">
             <img
               class="image-3"
               src="./assets/image/Group 35.png"
@@ -456,26 +391,26 @@
 
     <section class="section-three">
       <div class="container">
-        <div class="text-center ">
+        <div class="text-center">
           <h3>Trusted Partners Worldwide</h3>
-          <p>We're partners with countless major organisations around the globe</p>
+          <p>
+            We're partners with countless major organisations around the globe
+          </p>
         </div>
-            <div class="row ">
-              <div class="col-lg-3 three-images">
-                <img src="assets/image/image 4.png" class="side-picture" alt="">
-              </div>
-              <div class="col-lg-3">
-                <img src="./assets/image/image 2.png" class="side-picture" alt="">
-              </div>
-              <div class="col-lg-3
-              ">
-                <img src="./assets/image/image 3.png" class="side-picture" alt="">
-              </div>
-              <div class="col-lg-3">
-                <img src="./assets/image/image 5.png" class="side-picture" alt="">
-              </div>
-            </div>
-         
+        <div class="row d-flex align-items-center justify-content-center">
+          <div class="col-lg-3 three-images">
+            <img src="assets/image/image 4.png" class="side-picture" alt="" />
+          </div>
+          <div class="col-lg-3">
+            <img src="./assets/image/image 2.png" class="side-picture" alt="" />
+          </div>
+          <div class="col-lg-3">
+            <img src="./assets/image/image 3.png" class="side-picture" alt="" />
+          </div>
+          <div class="col-lg-3">
+            <img src="./assets/image/image 5.png" class="side-picture" alt="" />
+          </div>
+        </div>
       </div>
     </section>
 
@@ -518,7 +453,9 @@
       <div class="container">
         <div class="row d-flex align-items-center section-5">
           <div class="col section-5-1">
-            <h3 class="fw-bold mb-3">Advanced Trading <span>Tools</span></h3>
+            <h3 class="fw-bold mb-3">
+              Advanced Trading <span class="section-span-tools">Tools</span>
+            </h3>
             <p class="fw-bold mb-2">
               Professional Access, Non-stop Availability
             </p>
@@ -538,10 +475,12 @@
               Premium 24/7 support available to all customers worldwide by phone
               or email. Dedicated account managers for partners.
             </p>
-           <div class="">
-            <button class="btn btn-2 btn-outline-primary rounded-5 btn-lg"> Get Started</button> 
-            <a class="a-learn ps-5 text-primary" href="#!">Learn More</a>
-           </div>
+            <div class="d-flex section-3-get">
+              <button class="btn btn-outline-primary rounded-5">
+                Get Started
+              </button>
+              <a class="a-learn text-primary" href="#!">Learn More</a>
+            </div>
           </div>
 
           <div class="col section-5-1">
@@ -602,23 +541,31 @@
         <div class="row">
           <div class="col">
             <div class="row text-center">
-              <div class="col-md-4">
+              <div class="col-md-4 position-relative">
                 <img src="./assets/image/bitcoin-middle.png" alt="btc" />
                 <h4 class="fw-bold">Sing Up</h4>
                 <p class="text-muted">
                   Buy Bitcoin or Ethereum, then securely store it in your Wallet
                   or send it on easily to friends
                 </p>
-                <img class="dasthead-1 d-none d-lg-block" src="./assets/image/dashed-ok.png" alt="ok">
+                <img
+                  class="dasthead-1 d-none d-lg-block"
+                  src="./assets/image/dashed-ok.png"
+                  alt="ok"
+                />
               </div>
-              <div class="col-md-4">
+              <div class="col-md-4 position-relative">
                 <img src="./assets/image/found-1.png" alt="bfund" />
                 <h4 class="fw-bold">Fund</h4>
                 <p class="text-muted">
                   Choose your preferred payment method such as bank transfer or
                   credit card to top up your NEFA Wallet
                 </p>
-                <img class="dasthead-2 d-none d-lg-block" src="./assets/image/dashed-ok.png" alt="ok">
+                <img
+                  class="dasthead-2 d-none d-lg-block"
+                  src="./assets/image/dashed-ok.png"
+                  alt="ok"
+                />
               </div>
               <div class="col-md-4">
                 <img src="./assets/image/buy-the-cyripto.png" alt="btc-buy" />
