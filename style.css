@@ -1,3 +1,16 @@
+/* @media (max-width: 768px) {
+  .section-acardion {
+    margin-top: 5rem !important;
+  }
+
+  .btn-1-2 {
+    display: block;
+    width: 310px !important;
+    height: 58px !important;
+    align-items: center;
+  }
+
+}  */
 @media screen and (max-width: 992px) {
   .section-2 {
     flex-direction: column-reverse;
